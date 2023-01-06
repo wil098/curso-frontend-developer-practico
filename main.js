@@ -1,4 +1,4 @@
-
+//Menu Desktop
 //se seleccionan las clases en las variables que queremos usar
 let desktopMenu = document.querySelector('.desktop-menu')
 let navEmail = document.querySelector('.navbar-email')
@@ -16,3 +16,13 @@ function toggleDesktopMenu(){
    desktopMenu.classList.toggle('inactive')
 }
 
+//Menu Mobile
+
+let mobileMenu = document.querySelector('.mobile-menu')
+let menuIcon = document.querySelector('.menuIcon')
+
+menuIcon.addEventListener('click', toggleMobileMenu)
+
+function toggleMobileMenu(){
+    mobileMenu.classList.toggle('inactive')
+}
